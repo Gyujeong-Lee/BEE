@@ -278,6 +278,11 @@ def search_news_data():
             # 검색 결과 중에서 제목 체크
             temp = pd.DataFrame(datas['items'])
             for idx, title in enumerate(temp['title']):
+                description = temp['description'][idx]
+                # 스포츠 기사 필터링
+                if ('리그' in description) or ('KBO' in description) or ('프로농구' in description) or ('프로야구' in description)\
+                    or ('LPGA' in description) or ('프로골프' in description):
+                    continue
                 # 하루 전날 기사인지 체크
                 news_time = temp['pubDate'][idx].split()
                 news_year = news_time[3]
@@ -309,7 +314,7 @@ def search_news_data():
                     # 전체 갯수 증가
                     total_cnt += 1
                     link = temp['originallink'][idx]
-                    content = temp['description'][idx].strip().replace('<b>','').replace('</b>','')\
+                    content = description.strip().replace('<b>','').replace('</b>','')\
                         .replace('&quot;','"').replace('&lt;','>').replace('&gt;','<').replace('&amp;','&')
                     category = ''
                     # E 관련 기사면
@@ -397,8 +402,11 @@ search_news_data()
 end = time.time()
 print("시작시간 : ", start)
 print("종료 시간: ", end)
-print("총 실행시간 :", end - start)  # 현재시각 - 시작시간 = 실행 시간
+print("총 실행시간 :", (end - start)/60)  # 현재시각 - 시작시간 = 실행 시간
 
 # 시작시간 :  1633089025.5979166
 # 종료 시간:  1633091180.8829184
 # 총 실행시간 : 2155.2850017547607 = 약 36분
+
+# 평일 3 ~ 40분
+# 주말 5 ~ 10분
