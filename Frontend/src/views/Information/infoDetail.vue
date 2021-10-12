@@ -114,7 +114,7 @@ export default {
     },
     goDetail(pk) {
       this.$router.push({ name: 'infoDetail',  params: {pk: pk }})
-      this.$router.go()
+      // this.$router.go()
     },  
     goPage(url){
       window.open(url, "_blank")

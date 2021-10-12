@@ -17,7 +17,8 @@ export default {
     }
   },
   methods: {
-    search: function () {
+    search: function (e) {
+      e.preventDefault()
       axios.get( `corporates/search/${this.searchContent}`)
         .then(res => {
           this.$router.push({name: 'infoDetail', params: {pk: res.data.pk}})
