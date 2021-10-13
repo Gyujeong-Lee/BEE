@@ -16,8 +16,8 @@
 - [서비스구조](#서비스-구조)
 - [Getting Started](#getting-started)
 - [프로젝트 기획](#프로젝트-기획)
-- [프로젝트 규칙](#협업-규칙)
-- [팀원 소개](#팀원-소개])
+- [프로젝트 규칙](#프로젝트-규칙)
+- [팀원 소개](#팀원-소개)
 
 
 
@@ -342,6 +342,7 @@ $ yarn serve
 #### 김윤서
 
 - S 데이터 수집 및 분석
+
 - Frontend
 - 컴포넌트 구조 설계
 - mbti 기능 구현
@@ -349,9 +350,9 @@ $ yarn serve
 #### 김예찬
 
 - S 데이터 수집 및 분석
+
 - Frontend
 - mbti 기능 구현
-
 - Backend 배포
 
 #### 방지환
@@ -365,6 +366,7 @@ $ yarn serve
 #### 정희진
 
 - E 데이터 수집 및 분석
+
 - Backend
 - 유사도 분석을 통한 추천 알고리즘(Cosine Similarity + Euclidean Distance) 및 DB 업데이트 구현
 - UCC 제작
