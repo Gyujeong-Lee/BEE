@@ -165,27 +165,27 @@ export default {
             this.e1 = this.corporate.environment_evaluation[0].co2
           }
 
-          if (this.corporate.environment_evaluation[0].co2 == 0) {
+          if (this.corporate.environment_evaluation[0].energy == 0) {
             this.e2 = '-'
           }
           else {
             this.e2 = this.corporate.environment_evaluation[0].energy
           }
           // s score
-          if (this.corporate.environment_evaluation[0].co2 == 0) {
+          if (this.corporate.environment_evaluation[0].woman_ratio == 0) {
             this.s1 = '-'
           }
           else {
             this.s1 = this.corporate.social_evaluation[0].woman_ratio
           }
 
-          if (this.corporate.environment_evaluation[0].co2 == 0) {
+          if (this.corporate.environment_evaluation[0].average_term == 0) {
             this.s2 = '-'
           }
           else {
             this.s2 = this.corporate.social_evaluation[0].average_term
           }
-          if (this.corporate.environment_evaluation[0].co2 == 0) {
+          if (this.corporate.environment_evaluation[0].term_ratio == 0) {
             this.s3 = '-'
           }
           else {
@@ -193,7 +193,7 @@ export default {
           }
 
           // g score
-          if (this.corporate.environment_evaluation[0].co2 == 0) {
+          if (this.corporate.environment_evaluation[0].board_ratio == 0) {
             this.g1 = '-'
           }
           else {
@@ -209,21 +209,21 @@ export default {
             this.g2 = '.'
           }
 
-          if (this.corporate.environment_evaluation[0].co2 == 0) {
+          if (this.corporate.environment_evaluation[0].largest_shareholder == 0) {
             this.g3 = '-'
           }
           else {
             this.g3 = this.corporate.governance_evaluation[0].largest_shareholder
           }
 
-          if (this.corporate.environment_evaluation[0].co2 == 0) {
+          if (this.corporate.environment_evaluation[0].salary_gap == 0) {
             this.g4 = '-'
           }
           else {
             this.g4 = this.corporate.governance_evaluation[0].salary_gap
           }
 
-          if (this.corporate.environment_evaluation[0].co2 == 0) {
+          if (this.corporate.environment_evaluation[0].dividen_ratio == 0) {
             this.g5 = '-'
           }
           else {
