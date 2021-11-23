@@ -4,7 +4,7 @@
 >
 > 개발 기간 : 8/30 ~ 10/8 (6주)
 >
-> 배포 주소: https://bestesg.shop/
+> 배포 주소: https://www.besg.shop/
 
 
 
@@ -49,7 +49,7 @@
 
 ## 서비스 소개
 
-> 소개 영상 : [UCC](./서울_3반_A302_UCC경진대회.mp4)
+> 소개 영상 : [UCC](./exec/서울_3반_A302_UCC경진대회.mp4)
 >
 > 사용 설명서: [서비스 시나리오](./exec/시연시나리오.md)
 
@@ -78,7 +78,7 @@
 #### BE
 
 
-- Django REST API, JWT, Swagger, MySQL(AWS RDS), [KoBERT](https://github.com/SKTBrain/KoBERT)
+- Django REST API, JWT, Swagger, MySQL(AWS RDS), Pytorch, [KoBERT](https://github.com/SKTBrain/KoBERT)
 
 #### 배포
 
@@ -93,9 +93,13 @@
 
 ## 서비스 구조
 
+- 시스템 아키텍쳐
+
 ![아키텍처](./README.assets/아키텍처.png)
 
+- 데이터 파이프라인
 
+![데이터](./README.assets/데이터.png)
 
 
 
